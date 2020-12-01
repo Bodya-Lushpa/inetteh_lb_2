@@ -1,0 +1,118 @@
+
+
+.container{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+section{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+form{
+    margin-top: 100px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: lightgrey;
+    margin-right: auto;
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 400px;
+}
+
+.radio-wrapper{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.radio-wrapper label{
+    margin-left: 10px;
+}
+
+.radio-input{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    z-index: 3;
+    opacity: 0;
+}
+
+.radio-overlap{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 0px;
+    left: 0px;
+    background-color: coral;
+    border-radius: 50%;
+    z-index: 2;
+    box-sizing: border-box;
+}
+
+.radio-input:checked + .radio-overlap{
+    border: 7px solid coral;
+    background-color: crimson;
+}
+
+.float-block{
+    height: 100px;
+    width: 100px;
+    background-color: lightskyblue;
+    margin: 20px;
+}
+
+.float-block-left{
+    float: left;
+}
+
+#relative{
+    position: relative;
+    margin-left: -50px;
+}
+
+.float-block-right{
+    float: right;
+}
+
+.flex{
+    display: flex;
+    height: 100px;
+    width: 100%;
+    background-color: lightslategrey;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.flex-item{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    font-size: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.flex .flex-item:first-child{
+    background-color: green;
+    order: 3;
+}
+
+.flex .flex-item:last-child{
+    background-color: red;
+    order: 2;
+}
+
+.flex .flex-item:nth-child(3){
+    order: 4;
+}
